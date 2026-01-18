@@ -1,0 +1,97 @@
+html,
+body {
+    margin: border-box;
+    padding: 0;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form > .form-group {
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.form > .form-group > .form-label {
+    margin-bottom: 5px;
+}
+
+.form > .form-group > .form-input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-group.form-group--button-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.form-input.form-input--full {
+    width: 100%;;
+    display: block;
+}
+
+.button {
+    display: inline-block;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tasks > .tasks-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0;
+}
+
+.tasks-list > .tasks-list-item {
+    list-style-type: none;
+}
+
+.tasks-list-item > .task {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #ccc;
+}
+
+.tasks-list-item > .task > .task-title {
+    display: block;
+    flex: 1;
+}
+
+.tasks-list-item.checked {
+    background-color: greenyellow;
+}
+
+
+
+
+

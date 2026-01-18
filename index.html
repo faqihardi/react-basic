@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="form" id="taskForm">
+            <div class="form-group">
+                <label for="taskTitle" class="form-label">
+                    Mau Ngapain Hari Ini?
+                </label>
+                <input 
+                    type="text" 
+                    class="form-input form-input--full"
+                    id="taskTitle"
+                    name="taskTitle"
+                    placeholder="Masukkan Kegiatan..."
+                    >
+            </div>
+            <div class="form-group form-group--button-right">
+                <button class="button" type="submit">Simpan</button>
+            </div>
+        </form>
+        <div class="tasks">
+            <h2 class="tasks-title">Agendaku</h2>
+            <ul class="tasks-list" id="tasksList"></ul>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
