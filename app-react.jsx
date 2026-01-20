@@ -68,7 +68,7 @@ const App = () => {
     }, []);
 
     const addTask = (event) => {
-        event.preventDeafult();
+        event.preventDefault();
         if (taskTitle.trim() === "") {
             alert("Judul tigas tidak boleh kosong...");
             return;
